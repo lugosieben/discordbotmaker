@@ -1,0 +1,33 @@
+{
+  "name": "discordbotmaker",
+  "version": "0.4.1",
+  "description": "Create an Discord bot easily!",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lugosieben/discordbotmaker.git"
+  },
+  "keywords": [
+    "botmaker",
+    "discordbotmaker",
+    "discord",
+    "bot",
+    "discordbot",
+    "easy",
+    "create",
+    "discordjs"
+  ],
+  "author": "Lugo_Sieben",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lugosieben/discordbotmaker/issues"
+  },
+  "homepage": "https://github.com/lugosieben/discordbotmaker#readme",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "emitjs": "^1.0.7"
+  }
+}
