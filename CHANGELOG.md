@@ -1,6 +1,8 @@
-## Changelog
+# Changelog
 
-__Newest Version:__ **0.7.0**
+__Newest Version:__
+### 0.7.0
+
 - Bug fixes
     - message.send() working again
     - Embeds error messages fixed
