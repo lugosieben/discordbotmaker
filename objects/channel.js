@@ -11,7 +11,7 @@ class Channel {
         }
         this.send = function send(message) {
             if(!message) throw new TypeError('You don\'t gave a message to send!')
-            data.send(message.content)
+            data.send(message)
         }
     }
 }

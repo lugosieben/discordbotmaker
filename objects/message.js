@@ -5,8 +5,8 @@ class Message {
         this.content = content;
         this.author  =  author;
         this.channel = channel;
-        this.send = function send() {
-            this.channel.send(this.content)
+        this.send = function send(message) {
+            this.channel.send(message)
         }
     }
 }
