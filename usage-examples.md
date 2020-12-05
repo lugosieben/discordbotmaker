@@ -15,7 +15,7 @@ const client = new Botmaker.Bot({ // Creates an bot instance
 ## Do something at a message event
 
 ```js
-client.on('message', message => { // Listen for message event
+client.events.on('message', message => { // Listen for message event
     // Do something...
 })
 ```

@@ -7,7 +7,6 @@ class Message {
         this.channel = channel;
         this.send = function send() {
             this.channel.send(this.content)
-            .catch(err => {console.error('Something went wrong while sending message with content ' + content + '\n' + err)})
         }
     }
 }

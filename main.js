@@ -1,7 +1,8 @@
 const { Client } = require('discord.js');
-const { Embed } = require('./objects/embed');
+// const { Embed } = require('./objects/embed');
 const { Message } = require('./objects/message');
 const { User } = require('./objects/user');
+const { Channel } = require('./objects/channel')
 const Emitter = require('emitjs');
 
 class Bot {
@@ -20,7 +21,8 @@ class Bot {
         })
         this.client.on('message', async message => {
             const author = new User(message.author)
-            const msg = new Message(author, message.toString())
+            const channel = new Channel(message.channel)
+            const msg = new Message(author, channel, message.toString())
             this.events.emit('message', msg)
             if(config.disableMessageNotis || config.disableMessageNotifications || config.dmn) this.notis = false
             else this.notis = true
@@ -31,7 +33,6 @@ class Bot {
 
 module.exports = {
     Bot,
-    Embed,
     Message,
     User
 }

@@ -19,7 +19,7 @@ const client = new Botmaker.Bot({ // Creates an bot instance
     dmn: true // Disables default message notifications in terminal
 })
 
-client.on('message', message => { // Wait for a message
+client.events.on('message', message => { // Wait for a message
     console.log(message.content) // Logs message in console
 })
 ```
