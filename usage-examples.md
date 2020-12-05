@@ -3,8 +3,8 @@
 ## Create the Bot Instance
 
 ```js
-const DBM = require('discordbotmaker'); // Import the package
-const client = new DBM.Bot({ // Creates an bot instance
+const Botmaker = require('discord-botmaker'); // Import the package
+const client = new Botmaker.Bot({ // Creates an bot instance
     token: 'my-token-here', // Put your bot token here
 })
 ```
@@ -21,7 +21,7 @@ client.on('message', message => { // Listen for message event
 ```
 
 #### Properties:
-`message.content` Gives content of message
+`message.content` Gives content of message\
 `message.author` Gives author of message
 
 ## More examples are comming soon...
