@@ -25,5 +25,12 @@ client.events.on('message', message => { // Wait for a message
 ```
 See other Usage Examples [here](./usage-examples.md).
 
+## Developer
+
+Hey, I'm Lugo_Sieben!
+You can contact me on these ways:
+__Discord__: `Lugo_Sieben#9999`
+__Email__: `lugosieben@gmail.com`
+
 ## License
 [MIT](https://choosealicense.com/licenses/isc/)
