@@ -6,11 +6,13 @@
 const Botmaker = require('discord-botmaker'); // Import the package
 const client = new Botmaker.Bot({ // Creates an bot instance
     token: 'my-token-here', // Put your bot token here
+    prefix: '!' // Put your bot prefix here (How every command starts)
 })
 ```
 #### Options:
-`token` Required, Login in your Bot\
-`DisableMessageNotifications` Optional, disables the default message notifications in terminal. Alias: `dmn`
+`token` Required, Login in your Bot
+`prefix` Required, Prefix for your Bot Commands
+`DisableMessageNotifications` Optional, disables the default message notifications in terminal. Alias: `dmn`, `DisableMessageNotis`
 
 ## Do something at a message event
 
@@ -35,4 +37,14 @@ client.events.on('command', async (message, cmd, args) => { // Waits for Command
 `message.content` Gives content of message\
 `message.author` Gives author of message
 
+
+## Create and send an Embed at command
+
+```js
+client.events.on('command', async (message, cmd, args) => { // Waits for Command
+    if(cmd === 'embed') { // Checking if command is 'embed'
+        let embed = new Embed({ title: 'Embed', description: 'This is an Embed!', color: 'RED' }) // Creates an Embed with properties
+    }
+}
+```
 ## More examples are comming soon...

@@ -1,7 +1,7 @@
 class Message {
     constructor (author, channel, content) {
-        if(!author) throw new TypeError('No author got for message')
-        if(!channel) throw new TypeError('No channel got for message')
+        if(!author) throw new TypeError('Error: No author got for message')
+        if(!channel) throw new TypeError('Error: No channel got for message')
         this.content = content;
         this.author  =  author;
         this.channel = channel;

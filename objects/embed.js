@@ -11,16 +11,27 @@ class Embed {
         if(config.img) this.img = config.img
         if(config.image) this.img = config.image
 
-        this = new MessageEmbed()
+        this.embed = new MessageEmbed()
             .setTitle(this.title)
-        if(this.description) BaseEmbed.setDescription(this.description)
-        if(this.color) BaseEmbed.setColor(this.color)
-        if(this.footer) BaseEmbed.setFooter(this.footer)
-        if(this.thumbnail) BaseEmbed.setThumbnail(this.thumbnail)
-        if(this.img) BaseEmbed.setImage(this.img)
+        if(this.description) this.embed.setDescription(this.description)
+        if(this.color) this.embed.setColor(this.color)
+        if(this.footer) this.embed.setFooter(this.footer)
+        if(this.thumbnail) this.embed.setThumbnail(this.thumbnail)
+        if(this.img) this.embed.setImage(this.img)
+
+        this.send = function send(channel) {
+            if(!channel) throw new TypeError('Error: There wasn\'t a channel specified for this embed.')
+            channel.send(this.embed)
+        }
     }
 }
 
 module.exports = {
     Embed
 }
+
+// CHANGELOG [embed.js]
+// Released in version 0.7.1, now working properly again. --> CHANGELOG.md
+//
+// Made it possible to create and send Embeds.
+// Example in ./using-examples.md
