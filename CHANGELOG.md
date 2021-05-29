@@ -2,7 +2,11 @@
 
 __Newest Version:__
 
-## 0.7.1
+## 0.7.2 Small Update
+
+- Corrected the wrong module names in README.md and usage-examples.md.
+
+#### 0.7.1
 
 - Started to developing the module again
 - Embeds

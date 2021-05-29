@@ -3,7 +3,7 @@
 ## Create the Bot Instance
 
 ```js
-const Botmaker = require('discord-botmaker'); // Import the package
+const Botmaker = require('botmakerdiscord'); // Import the package
 const client = new Botmaker.Bot({ // Creates an bot instance
     token: 'my-token-here', // Put your bot token here
     prefix: '!' // Put your bot prefix here (How every command starts)
