@@ -16,6 +16,7 @@ $ npm install discordbotmaker
 const Botmaker = require('botmakerdiscord'); // Import the package
 const client = new Botmaker.Bot({ // Creates an bot instance
     token: 'my-token-here', // Put your bot token here
+    prefix: 'my-prefix-here' // Put your bot prefix here (How every command starts with)
     dmn: true // Disables default message notifications in terminal
 })
 

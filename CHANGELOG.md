@@ -12,6 +12,9 @@ __Newest Version:__
 - Embeds
     - Made an possiblity to `channel.send(embed)` and `message.send(embed)`
 - Added an wiki for the module, which can be found at the github page.
+    - More Categories will be added in the next updates.
+- Issue fixes
+    - README.md usage example now has an prefix, which is required.
 
 ## 0.7.2 Small Update
 
