@@ -1,6 +1,6 @@
 {
   "name": "botmakerdiscord",
-  "version": "0.7.2",
+  "version": "0.8.0-beta",
   "description": "Create an Discord bot easily!",
   "main": "main.js",
   "scripts": {

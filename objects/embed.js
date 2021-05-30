@@ -2,6 +2,9 @@ const { MessageEmbed } = require('discord.js')
 
 class Embed {
     constructor(config) {
+
+        this.isEmbed = true
+
         if(!config.title) throw new TypeError('Your embed must contain an title!')
         this.title = config.title
         if(config.description) this.description = config.description

@@ -14,6 +14,16 @@ class Bot {
         this.client = new Client();
         this.prefix = config.prefix;
         this.events = new Emitter()
+
+        if (config.status) {
+            this.status = config.status;
+            if(!this.status.name) throw new TypeError('No status name given for bot')
+            if(!this.status.type) throw new TypeError('No status type given for bot')
+            client.user.setActivity(this.status.name, {
+                type: this.status.type.toUpperCase(),
+                url: "https://www.twitch.tv/#"
+              });
+        }
         
         this.client.login(this.token)
         this.client.on('ready', () => {
@@ -38,6 +48,10 @@ class Bot {
             this.events.emit('ready') // Emits ready event
             this.events.emit('online') // Alias of ready event
         })
+        this.client.user.setActivity("with depression", {
+            type: "STREAMING",
+            url: "https://www.twitch.tv/monstercat"
+          });
     }
 }
 

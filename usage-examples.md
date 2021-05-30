@@ -7,11 +7,13 @@ const Botmaker = require('botmakerdiscord'); // Import the package
 const client = new Botmaker.Bot({ // Creates an bot instance
     token: 'my-token-here', // Put your bot token here
     prefix: '!' // Put your bot prefix here (How every command starts)
+    status: { name: 'with Discord', type: 'playing'} // Status of the bot (Available types: playing, watching, streaming, listening)
 })
 ```
 #### Options:
 `token` Required, Login in your Bot
 `prefix` Required, Prefix for your Bot Commands
+`status` Optional, Status settings of the bot
 `DisableMessageNotifications` Optional, disables the default message notifications in terminal. Alias: `dmn`, `DisableMessageNotis`
 
 ## Do something at a message event
