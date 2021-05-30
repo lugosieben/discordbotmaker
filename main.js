@@ -19,8 +19,8 @@ class Bot {
             this.status = config.status;
             if(!this.status.name) throw new TypeError('No status name given for bot')
             if(!this.status.type) throw new TypeError('No status type given for bot')
-            client.user.setActivity(this.status.name, {
-                type: this.status.type.toUpperCase(),
+            client.user.setActivity(this.status[0].name, {
+                type: this.status[0].type.toUpperCase(),
                 url: "https://www.twitch.tv/#"
               });
         }

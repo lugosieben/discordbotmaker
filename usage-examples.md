@@ -7,7 +7,7 @@ const Botmaker = require('botmakerdiscord'); // Import the package
 const client = new Botmaker.Bot({ // Creates an bot instance
     token: 'my-token-here', // Put your bot token here
     prefix: '!' // Put your bot prefix here (How every command starts)
-    status: { name: 'with Discord', type: 'playing'} // Status of the bot (Available types: playing, watching, streaming, listening)
+    status: {[] name: 'with Discord', type: 'playing' ]} // Status of the bot (Available types: playing, watching, streaming, listening)
 })
 ```
 #### Options:

@@ -8,9 +8,10 @@ __Newest Version:__
     - Can be set in bot instance creation with `prefix: {[name: "with discordbotmaker", type: "playing"]}`
         - Supports any status names in form of strings
         - Supports following status types: `playing`, `watching`, `streaming`, `listening`
-        - Supports multiple statuses which will change every 10 seconds: `prefix: {[name: "first status", type="streaming"],[name: "second status", type="watching"]}`
+        - Supports multiple statuses which will change every 10 seconds: `prefix: {[name: "first status", type="streaming"],[name: "second status", type="watching"]}` (Will work in 0.8.0 final release)
 - Embeds
     - Made an possiblity to `channel.send(embed)` and `message.send(embed)`
+- Added an wiki for the module, which can be found at the github page.
 
 ## 0.7.2 Small Update
 
